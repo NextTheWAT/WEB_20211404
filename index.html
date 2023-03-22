@@ -1,60 +1,43 @@
 <!DOCTYPE html>
+<!--이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다.-->
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Google</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <!-- 오른쪽 상단 -->
-    <header>
-      <input type="button" class="dark-light-btn" value="dark" onclick="darkLightHandler(this)">
-      <ul>
-        <li><a href="https://mail.google.com/">Gmail</a></li>
-        <li><a href="https://www.google.co.kr/imghp?hl=ko&ogbl">이미지</a></li>
-        <li><button class="google-app"><i class="fas fa-th"></i></button></li>
-        <li><button><img class="profile-image" src="images/profile.jpg"></button></li>
-      </ul>
-    </header>
-    <!-- 로고, 검색바, Google 검색, I'm Feeling Lukcy -->
-    <section class="middle">
-      <div class="google-logo">
-        <img class="logo-image" src="images/logo.png">
-      </div>      
-      <div class="search-box">
-        <span class="search-icon"><i class="fas fa-search"></i></span>
-        <span class="keyboard-icon"><i class="far fa-keyboard"></i></span>
-        <span class="microphone-icon"><i class="fas fa-microphone"></i></span>
-        <button class="clear-btn"><i class="fas fa-times"></i></button>
-        <input class="search-bar" type="text">
-      </div>
-      <div class="additional-box">
-        <a href="#" class="additional-search">Google 검색</a>
-        <a href="https://www.google.com/doodles" class="additional-lucky">I'm Feeling Lucky</a>
-      </div>
-    </section>
-    <!-- 하단 국가, 약관, 설정 등 -->
-    <footer>
-      <div class="country-info">대한민국</div>
-      <div class="instruction">
-        <ul>
-          <li class="left-side">
-            <a href="#">Google 정보</a>
-            <a href="#">광고</a>
-            <a href="#">비즈니스</a>
-            <a href="#">검색의 원리</a>
-          </li>
-          <li class="right-side">
-            <a href="#">개인정보처리방침</a>
-            <a href="#">약관</a>
-            <a href="#">설정</a>
-          </li>
-        </ul>
-      </div>
-    </footer>
-  </body>
-  <script src="colors.js"></script>
-  <script src="events.js"></script>
+	<title>구글 메인화면 예제</title>
+	<body>
+			<head>
+		<p style="text-align:left;"><b><font size="4em" color="green">
+			문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의</font></b></p>
+		<br> <! br은 줄 바꿈입니다.>
+	<hr> <! hr은 밑줄을 그려줍니다.>
+	</head>
+		<meta name="author" content="20211404"> 
+		<meta charset="utf-8"> 
+		<meta name="keywords" content="computer">
+		
+		<a href="index.html" target="_blank">
+		<base href="https://web--qqyhw.run.goorm.site/">
+
+
+		
+		<p style="text-align:center"><img src="images/logo.png" alt="구글이미지" style="max-width: 50%; height: 50%;"></p>
+		<! img 태그는 이미지를 삽입합니다. src=경로, 이미지 깨지면 alt 출력>
+		<br><! br은 줄 바꿈입니다.>
+		<p style="text-align:center">검색 : <input type="text" name="search" size="55" value=""><button type="button" onclick="alert('검색을 수행합니다!')">검색</button><br></p><br><br><br><br><br><br> <! 간격을 위해 줄바꿈을 여러번 추가 해줍니다.>
+	<hr> <! hr은 밑줄을 그려줍니다.>
+
+<table style="margin-left: auto; margin-right: auto;" border="1" width="500"> <! 테이블을 정의합니다.>
+	<caption>인기 검색어</caption> <! 테이블 제목.>
+	<tbody>
+	<tr><td bgcolor="green" width="50"><b>영화</b></td><td width="80" bgcolor="blue">아저씨</td><td width="80" bgcolor="blue">아저씨</td><td width="100">어머니</td><td width="100">헬머니</td><td>할부지</td></tr> <! 1행 추가.>
+	<tr bgcolor="red"><td width="50">음악</td><td>KPOP</td><td>JPOP</td><td>ROCK1</td><td>ROCK2</td><td rowspan="2">EUROBEAT</td></tr> <! 2행 추가.>
+	<tr bgcolor="red"><td colspan="2" width="50">게임</td><td>LOL</td><td>WOW</td><td>SUDDEN</td></tr> <! 3행 추가.>
+	</tbody>
+</table> 
+
+
+			
+		<p style="text-align:right;"><font size="3em" color="red">문서의 본문 텍스트, 이미지, 테이블, 자바스크립트 코드, 동영상 등</font></p>
+			<br> <! br은 줄 바꿈입니다.></a>
+
+
+	</body>
 </html>

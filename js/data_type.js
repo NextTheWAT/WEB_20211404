@@ -7,3 +7,4 @@ let undefi; //변수 이름만, 초기화 x
 let empty = null; //비어 있음
 
 console.log(undefi, empty); //여러개 출력
+

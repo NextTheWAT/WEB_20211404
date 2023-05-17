@@ -5,3 +5,5 @@ function over(obj) {
 function out(obj) {
 	obj.src="images/Google2.png";
 }
+
+document.cookie = escape(name) + "=" + escape(value) + "; expires=" + date.toUTCString() + "SameSite=None; Secure";

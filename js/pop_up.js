@@ -1,12 +1,14 @@
+//팝업 기능//
 function pop_up() {
 	var cookieCheck = getCookie("popupYN");
         if (cookieCheck != "N"){
-        window.open("pop_up.html", "팝업테스트", "width=400, height=300, top=10, left=10");
+        window.open("../pop_up.html", "팝업테스트", "width=400, height=300, top=10, left=10");
         }
 }
 
 
-function show_clock(){
+//팝업 안에 현재시간 기능//
+function showclock(){ 
         let currentDate = new Date(); // 날짜 객체 생성
         let divClock = document.getElementById('divClock');
         let msg = "현재 시간 : ";
@@ -26,13 +28,14 @@ function show_clock(){
         if (currentDate.getMinutes()>58) {    //정각 1분전 빨강색 출력
           divClock.style.color="red";
         }
-        setTimeout(show_clock, 1000);  //1초마다 갱신
+        setTimeout(showclock, 1000);  //1초마다 갱신
 }
 
 function setCookie(name, value, expiredays) {
         var date = new Date();
         date.setDate(date.getDate() + expiredays);
-        document.cookie = escape(name) + "=" + escape(value) + "; expires=" + date.toUTCString();        
+        document.cookie = escape(name) + "=" + escape(value) + "; expires=" + date.toUTCString() + "SameSite=None; Secure";
+        
     }
 
 function getCookie(name) {
@@ -50,7 +53,6 @@ function getCookie(name) {
         }
         return ;
 }
-
 function closePopup() {
         if (document.getElementById('check_popup').value) {
             setCookie("popupYN", "N", 1);
@@ -58,4 +60,3 @@ function closePopup() {
             self.close();
         }
     }
-

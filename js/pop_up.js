@@ -31,6 +31,26 @@ function showclock(){
         setTimeout(showclock, 1000);  //1초마다 갱신
 }
 
+
+function showclock2() {
+    var currentDate = new Date(); // 현재 시간
+    var closingTime = new Date(); // 창이 닫히는 시간
+    closingTime.setHours(18); // 창이 18시에 닫히도록 설정 (예시로 18시로 설정했습니다)
+
+    var diff = closingTime - currentDate; // 창이 닫히기까지 남은 시간 (밀리초 단위)
+
+    // 시간, 분, 초 단위로 변환
+    var hoursLeft = Math.floor(diff / (1000 * 60 * 60));
+    var minutesLeft = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    var secondsLeft = Math.floor((diff % (1000 * 60)) / 1000);
+
+    var divClock2 = document.getElementById('divClock2');
+    divClock2.innerText = "창이 닫히기까지 남은 시간: " + hoursLeft + "시간 " + minutesLeft + "분 " + secondsLeft + "초";
+
+    setTimeout(showclock2, 1000); // 1초마다 갱신
+}
+
+
 function setCookie(name, value, expiredays) {
         var date = new Date();
         date.setDate(date.getDate() + expiredays);
